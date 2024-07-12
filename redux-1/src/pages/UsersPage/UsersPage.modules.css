@@ -1,0 +1,14 @@
+.btn{
+    margin-top: 75px;
+    width:150px;
+    color:green;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
