@@ -1,4 +1,5 @@
 import {types} from './types.js'
+import {type} from "@testing-library/user-event/dist/type";
 
 export function changeTitleAction(){
     return {
@@ -21,6 +22,13 @@ export function getUsersAction(users){
     }
 }
 
+export function getUserId(user){
+    return {
+        type: types.USER,
+        payload:user
+    }
+}
+
 export function fetchUsersAction(){
     return async function(dispatch){
         const response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -33,6 +41,7 @@ export function fetchUsersId(id){
     return async function(dispatch){
         const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
         const data = await response.json()
+        dispatch(getUserId(data))
     }
 }
 

@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {fetchUsersAction} from "../../redux/actions";
 import UserCard from "../../components/UserCard";
 import styles from './UsersPage.modules.css'
+import {Link, NavLink} from "react-router-dom";
 
 function UsersPage() {
     const users=useSelector(state=>state.usersPageReducer.users)
@@ -12,12 +13,17 @@ function UsersPage() {
         dispatch(fetchUsersAction())
     }
     return (
-        <div>
+        <div className='users'>
             <button
                 className='btn'
                 onClick={getUsers}>Get users</button>
             <div className='wrapper'>
-                {users.map(user=><UserCard userInfo={user}/>)}
+                {users.map(user=>(
+                    <NavLink to='/usercard'>
+                        <UserCard
+                            userInfo={user}/>
+                     </NavLink>
+                ))}
             </div>
         </div>
     );
