@@ -1,0 +1,33 @@
+.user{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:500px;
+    height:auto;
+    padding: 8px;
+    margin-top: 50px;
+    border:1px solid rgba(0,0,0,0.4);
+    border-radius: 15px;
+    box-shadow:3px 5px 5px 2px;
+    cursor:pointer;
+    line-height: 35px;
+}
+.user img{
+    padding-top: 15px;
+    width:150px;
+    height:150px;
+}
+.user h1{
+    font-family: "Century Gothic";
+    font-size: 30px;
+    font-weight: bold;
+    color:#4444ff;
+}
+.user span{
+    font-size: 15px;
+    font-family: "Century Gothic";
+    color:seagreen;
+    font-weight: bold;
+}
