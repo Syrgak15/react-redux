@@ -1,0 +1,31 @@
+
+.card{
+    width:500px;
+    height:auto;
+    padding: 8px;
+    margin-top: 50px;
+    border:1px solid rgba(0,0,0,0.4);
+    border-radius: 15px;
+    box-shadow:3px 5px 5px 2px;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card img{
+    padding-top: 15px;
+}
+.card .title{
+    font-family: "Century Gothic";
+    font-size: 25px;
+    font-weight: bold;
+    color:#44f;
+}
+.card p{
+    line-height: 25px;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-weight: 500;
+    color:saddlebrown;
+}
